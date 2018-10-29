@@ -1,0 +1,28 @@
+$button-padding-vertical: 0.375rem !default
+$button-padding-horizontal: 0.75em !default
+$button-color-button: $black !default
+
+.button
+    background-color: $white
+    cursor: pointer
+    justify-content: center
+    text-align: center
+    font-size: $size-6
+    border: $white
+    padding: $button-padding-vertical $button-padding-horizontal
+    &:hover
+        border-color: darken($white, 10)
+        color: lighten($dark, 10)
+    &.is-small
+        font-size: 0.75rem
+    &.is-medium
+        font-size: $size-4
+    &.is-large
+        font-size: $size-1
+    @each $color-name, $color in $colors-map
+        $color-invert: nth($color, 1)
+        &.is-#{$color-name}
+            background-color: #{$color}
+            color: $white
+            &:hover
+                background-color: darken($color-invert, 5%)

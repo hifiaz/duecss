@@ -1,0 +1,9 @@
+.container
+    margin: 0 auto
+    position: relative
+    +desktop
+        max-width: $desktop - (2 * $gap)
+        width: $desktop - (2 * $gap)
+        &.is-fluid
+            max-width: none
+            width: auto

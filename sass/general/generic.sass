@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Krub:300,400,500,600,700')
+$body-background-color: $light !default
+$body-size: 16px !default
+$body-line-height: 1.5rem !default
+$body-rendering: optimizeLegibility
+$size: $size-1, $size-2, $size-3, $size-4, $size-5, $size-6
+$colors-map:("primary": $orange,"white": $white, "black": $black, "dark":$dark, "warning":$yellow, "danger":$red, "info":$blue, "success":$green)
+
+html
+    background-color: $body-background-color
+    -moz-osx-font-smoothing: grayscale
+    -webkit-font-smoothing: antialiased
+    font-size: $body-size
+    text-size-adjust: 100%
+    text-rendering: $body-rendering
+    
+body,
+button,
+input,
+select,
+textarea
+  font-family: $font-family
+
+body
+    font-size: 1rem
+    font-weight: $weight-normal
+    line-height: $body-line-height
+a
+  color: $white
+  cursor: pointer
+  text-decoration: none
+  strong
+    color: currentColor
+  &:hover
+    color: darken($white, 8)
+
+@each $color-name, $color in $colors-map
+    .has-text-#{$color-name}
+        color: #{$color} !important
+    .has-#{$color-name}
+        background-color: #{$color} !important
+.title
+    font-weight: $weight-bold
+.subtitle
+    font-weight: $weight-medium
+@for $i from 1 through length($size)
+    .is-#{$i}
+        font-size: nth($size,$i)
+    
+.is-centered
+    place-items: center
+.is-centered-self
+    place-self: center
+.is-left
+    align-items: center !important
+.is-right
+    text-align: right !important
+    align-items: center !important
