@@ -1,101 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Starter</title>
-    <link rel="stylesheet" href="duestyle.css">
-    <style>
-    </style>
-</head>
+    <link rel="stylesheet" href="duestyle.css" />
+    <style></style>
+  </head>
 
-<body>
-    <nav class="nav-bar has-primary">
-        <div class="container nav-container">
-            <a class="logo column-9">
-                <img src="./duecss-logo.png" alt="duecss" width="180">
-            </a>
-            <a href="#" class="nav-item">
-                Home
-            </a>
-            <a href="#" class="nav-item">
-                <p>Blog</p>
-            </a>
-            <a href="#" class="nav-item">
-                <p>More</p>
-            </a>
-            <!-- <button id="ToggleMenu" onclick="onToggleMenu()">
-                <span class="bar-top"></span>
-                <span class="bar-mid"></span>
-                <span class="bar-bot"></span>
-            </button> -->
+  <body class="fluid">
+    <div class="main">
+      <p class="g-12">Layout</p>
+      <div class="bg-primary">col-1</div>
+      <div class="bg-primary">col-2</div>
+      <div class="bg-primary">col-3</div>
+      <div class="bg-primary">col-4</div>
+      <div class="bg-primary">col-5</div>
+      <div class="bg-primary">col-6</div>
+      <div class="bg-primary">col-7</div>
+      <div class="bg-primary">col-8</div>
+      <div class="bg-primary">col-9</div>
+      <div class="bg-primary">col-10</div>
+      <div class="bg-primary">col-11</div>
+      <div class="bg-primary">col-12</div>
+      <div class="g-2 bg-primary">col-2</div>
+      <div class="g-3 bg-primary">col-3</div>
+      <div class="g-4 bg-primary">col-4</div>
+      <div class="g-6 bg-primary">col-6</div>
+      <div class="g-8 bg-primary">col-8</div>
+      <div class="g-10 bg-primary">col-10</div>
+      <div class="g-12 bg-primary">col-12</div>
+      <p class="g-12">Typography</p>
+      <div class="g-2">
+        <div class="font-bold">
+          <h1>Aa</h1>
+          <h4>Aa</h4>
         </div>
-    </nav>
-    <div class="container">
-        <div class="columns">
-            <div class="column-12 row-5 is-centered-self">
-                <h1 class="is-1 has-text-primary">Duecss</h1>
-            </div>
-            <div class="column-6">
-                <h1>Typography</h1>
-                <h1 class="is-1 has-text-warning">Hello World</h1>
-                <h2 class="is-2 has-text-danger">Hello World</h2>
-                <h3 class="is-3 has-text-dark">Hello World</h3>
-                <h4 class="is-4 has-text-success">Hello World</h4>
-                <h5 class="is-5 has-text-info">Hello World</h5>
-                <h6 class="is-6 has-text-primary">Hello World</h6>
-            </div>
-            <div class="column-6">
-                    <h1 class="title is-1">Hello World</h1>
-                    <h2 class="subtitle is-3">Hello World</h2>
-                </div>
-            <div class="column-6">
-                <h1 class="is-1">Basic Button</h1>
-                <button class="button is-small">Button</button>
-                <button class="button">Button</button>
-                <button class="button is-medium">Button</button>
-                <button class="button is-large">Button</button>
-            </div>
-            <div class="column-6">
-                <button class="button is-primary">Button</button>
-                <button class="button is-danger">Button</button>
-                <button class="button is-warning">Button</button>
-                <button class="button is-info">Button</button>
-                <button class="button is-success">Button</button>
-                <button class="button is-dark">Button</button>
-            </div>
-            <div class="column-4">
-                <div class="box">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates nemo soluta fugit placeat inventore asperiores mollitia culpa dolor a fuga iure facilis voluptatum, distinctio atque nobis excepturi quis enim blanditiis!</p>
-                </div>
-            </div>
-            <div class="column-4">
-                <div class="box">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates nemo soluta fugit placeat inventore asperiores mollitia culpa dolor a fuga iure facilis voluptatum, distinctio atque nobis excepturi quis enim blanditiis!</p>
-                </div>
-            </div>
-            <div class="column-4">
-                <div class="box">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates nemo soluta fugit placeat inventore asperiores mollitia culpa dolor a fuga iure facilis voluptatum, distinctio atque nobis excepturi quis enim blanditiis!</p>
-                </div>
-            </div>
-            <div class="box has-danger"></div>
-            <div class="box has-warning"></div>
-            <div class="box has-danger"></div>
-            <div class="box has-warning"></div>
-            <div class="box has-danger"></div>
-            <div class="box has-warning"></div>
-            <div class="box has-danger"></div>
-            <div class="box has-warning"></div>
-            <div class="box has-danger"></div>
-            <div class="box has-warning"></div>
-            <div class="box has-danger"></div>
-            <div class="box has-warning"></div>
+        <div class="font-medium">
+          <h1>Aa</h1>
+          <h4>Aa</h4>
         </div>
-
+        <div class="font-light">
+          <h1>Aa</h1>
+          <h4>Aa</h4>
+        </div>
+      </div>
+      <section class="g-4">
+        <h1>H1 Hadline</h1>
+        <h2>H2 Hadline</h2>
+        <h3>H3 Hadline</h3>
+        <h4>H4 Hadline</h4>
+        <h5>H5 Hadline</h5>
+        <h6>H6 Hadline</h6>
+      </section>
+      <div class="g-6">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates
+          nemo soluta fugit placeat inventore asperiores mollitia culpa dolor a
+          fuga iure facilis voluptatum, distinctio atque nobis excepturi quis
+          enim blanditiis!
+        </p>
+        <p>
+          <strong>
+            ipsum dolor sit amet consectetur, adipisicing elit. Voluptates nemo
+            soluta fugit placeat inventore asperiores mollitia culpa dolor a
+            fuga iure facilis voluptatum, distinctio atque nobis excepturi quis
+            enim blanditiis!</strong
+          >
+        </p>
+        <p>
+          <em
+            >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Voluptates nemo soluta fugit placeat inventore asperiores mollitia
+            culpa dolor a fuga iure facilis voluptatum, distinctio atque nobis
+            excepturi quis enim blanditiis!</em
+          >
+        </p>
+      </div>
+      <p class="g-12">Buttons</p>
+      <div class="g-6">
+        <h6 class="subheader">Button Default</h6>
+        <button>Button Default</button>
+        <button class="medium">Button Medium</button>
+        <button class="small">Button Small</button>
+        <h6 class="subheader">Basic Primary</h6>
+        <button class="button primary">Button Primary</button>
+        <button class="button primary active">Button Active</button>
+        <button class="button primary disable">Button Disable</button>
+        <button class="button primary medium">Button Medium</button>
+        <button class="button primary small">Button Small</button>
+        <h6 class="subheader">Button Secondary</h6>
+        <button class="button secondary">Button Secondary</button>
+        <button class="button secondary active">Button Active</button>
+        <button class="button secondary disable">Button Disable</button>
+        <button class="button secondary medium">Button Medium</button>
+        <button class="button secondary small">Button Small</button>
+        <h6 class="subheader">Button Danger</h6>
+        <button class="button danger">Button Danger</button>
+        <button class="button danger active">Button Active</button>
+        <button class="button danger disable">Button Disable</button>
+        <button class="button danger medium">Button Medium</button>
+        <button class="button danger small">Button Small</button>
+        <h6 class="subheader">Button Success</h6>
+        <button class="button success">Button Success</button>
+        <button class="button success active">Button Active</button>
+        <button class="button success disable">Button Disable</button>
+        <button class="button success medium">Button Medium</button>
+        <button class="button success small">Button Small</button>
+        <h6 class="subheader">Button Warning</h6>
+        <button class="button warning">Button Warning</button>
+        <button class="button warning active">Button Active</button>
+        <button class="button warning disable">Button Disable</button>
+        <button class="button warning medium">Button Medium</button>
+        <button class="button warning small">Button Small</button>
+      </div>
+      <div class="g-6">
+        <h6 class="subheader">Link</h6>
+        <a href="#">Default Link</a>
+        <a href="#" class="link primary">Primary Link</a>
+        <a href="#" class="link secondary">Secondary Link</a>
+        <a href="#" class="link danger">Danger Link</a>
+        <a href="#" class="link success">Success Link</a>
+        <a href="#" class="link warning">Warning Link</a>
+      </div>
+      <div class="g-6 gap-6">
+        <div class="inputs">
+          <label>Normal Input</label>
+          <input type="text" placeholder="Placeholder" />
+          <label>Normal Select</label>
+          <select type="text" placeholder="Placeholder">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2 </option>
+          </select>
+          <label>Normal Textarea</label>
+          <textarea type="text" placeholder="Placeholder"></textarea>
+        </div>
+      </div>
+      <div class="g-6 gap-6">
+        <div class="inputs">
+          <label>Disable Input</label>
+          <input type="text" placeholder="Placeholder" disabled />
+          <label>Disable Select</label>
+          <select type="text" placeholder="Placeholder" disabled>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2 </option>
+          </select>
+          <label>Disable Textarea</label>
+          <textarea type="text" placeholder="Placeholder" disabled></textarea>
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
