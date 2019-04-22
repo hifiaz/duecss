@@ -5,48 +5,55 @@ updated: 20 Aprtil 2019
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,300i,500,500i,700");
 :root {
   --canvasColor: hsl(0, 0%, 98%);
+
   --backgroundColor: #fff;
   --foregroundColor: #111;
+
   --accentColor: #4e5166;
   --accentShade1: #cecfd5;
   --accentShade2: #aeafb9;
   --accentShade3: #8e909d;
   --accentShade4: #6e7081;
   --accentShade5: #404354;
+
   --primaryColor: hsl(199, 98%, 48%);
   --primaryShade1: #e1f5fe;
   --primaryShade2: #b3e5fc;
   --primaryShade3: #4fc3f7;
   --primaryShade4: #0288d1;
   --primaryShade5: #0277bd;
+
   --secondaryColor: hsl(262, 52%, 47%);
   --secondaryShade1: #ede7f6;
   --secondaryShade2: #d1c4e9;
   --secondaryShade3: #9575cd;
   --secondaryShade4: #512da8;
   --secondaryShade5: #311b92;
+
   --successColor: hsl(174, 100%, 29%);
   --successShade1: #e0f2f1;
   --successShade2: #b2dfdb;
   --successShade3: #4db6ac;
   --successShade4: #00796b;
   --successShade5: #004d40;
+
   --dangerColor: hsl(4, 90%, 58%);
   --dangerShade1: #ffdde0;
   --dangerShade2: #ffcdd2;
   --dangerShade3: #ef9a9a;
   --dangerShade4: #d32f2f;
   --dangerShade5: #b71c1c;
+
   --warningColor: hsl(22, 100%, 67%);
   --warningShade1: #ffe2d1;
   --warningShade2: #ffceb2;
   --warningShade3: #ffb184;
   --warningShade4: #e88850;
   --warningShade5: #d17a48;
+
   --borderRadius: 6px;
   --boxShadow: 0 2px 5px rgba(#333, 0.2);
 }
-
 body {
   background-color: var(--canvasColor);
   font-family: "Poppins", sans-serif;
@@ -56,11 +63,9 @@ body {
   line-height: 1.5;
   transition: all 0.3s ease;
 }
-
 * {
   box-sizing: border-box;
 }
-
 /* layout */
 @media screen and (min-width: 768px) {
   .main {
@@ -68,31 +73,24 @@ body {
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 6px;
   }
-
   .g-2 {
     grid-column: span 2;
   }
-
   .g-3 {
     grid-column: span 3;
   }
-
   .g-4 {
     grid-column: span 4;
   }
-
   .g-6 {
     grid-column: span 6;
   }
-
   .g-8 {
     grid-column: span 8;
   }
-
   .g-10 {
     grid-column: span 10;
   }
-
   .g-12 {
     grid-column: span 12;
   }
@@ -107,15 +105,14 @@ body {
   body {
     padding: 0;
   }
-
   .main {
     background: var(--accentShade3);
   }
 }
+
 .bg-primary {
   background: var(--primaryColor);
 }
-
 .bg-warning {
   background: var(--warningColor);
 }
@@ -124,64 +121,51 @@ body {
 strong {
   font-weight: 500;
 }
-
 em {
   font-style: italic;
 }
-
 h1 {
   font: 700 48px/1.2 "poppins", sans-serif;
   margin-bottom: 10px;
 }
-
 h2 {
   font: 700 32px/1.2 "poppins", sans-serif;
   margin-bottom: 10px;
 }
-
 h3 {
   font: 700 24px/1.2 "poppins", sans-serif;
   margin-bottom: 10px;
 }
-
 h4 {
   font: 700 20px/1.2 "poppins", sans-serif;
   margin-bottom: 10px;
 }
-
 h5 {
   font: 500 18px/1.2 "poppins", sans-serif;
   margin-bottom: 10px;
 }
-
 h6 {
   font: 500 16px/1.2 "poppins", sans-serif;
   margin-bottom: 10px;
 }
-
 h6.subheader {
   color: var(--accentShade3);
   margin-top: 20px;
   margin-bottom: 20px;
   width: 100%;
 }
-
 p {
   margin-bottom: 15pxl;
 }
-
 .font-bold > * {
   font-weight: 700;
 }
-
 .font-medium > * {
   font-weight: 500;
 }
-
 .font-light > * {
   font-weight: 300;
 }
-
 /* button & link */
 button,
 .button {
@@ -198,77 +182,62 @@ button,
   background: var(--backgroundColor);
   color: var(--foregroundColor);
   transition: 0.2s ease;
+  &:hover {
+    top: -3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  &.active {
+    background: var(--accentShade1);
+    outline: none;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    top: 0;
+  }
+  &.disable {
+    opacity: 0.4;
+    user-select: none;
+    pointer-events: none;
+  }
+  &.primary {
+    background: var(--primaryColor);
+    color: var(--backgroundColor);
+    &.active {
+      background: var(--primaryShade4);
+    }
+  }
+  &.secondary {
+    background: var(--secondaryColor);
+    color: var(--backgroundColor);
+    &.active {
+      background: var(--secondaryShade4);
+    }
+  }
+  &.danger {
+    background: var(--dangerColor);
+    color: var(--backgroundColor);
+    &.active {
+      background: var(--dangerShade4);
+    }
+  }
+  &.success {
+    background: var(--successColor);
+    color: var(--backgroundColor);
+    &.active {
+      background: var(--successShade4);
+    }
+  }
+  &.warning {
+    background: var(--warningColor);
+    color: var(--backgroundColor);
+    &.active {
+      background: var(--warningShade4);
+    }
+  }
 }
-button:hover,
-.button:hover {
-  top: -3px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-}
-button.active,
-.button.active {
-  background: var(--accentShade1);
-  outline: none;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-  top: 0;
-}
-button.disable,
-.button.disable {
-  opacity: 0.4;
-  user-select: none;
-  pointer-events: none;
-}
-button.primary,
-.button.primary {
-  background: var(--primaryColor);
-  color: var(--backgroundColor);
-}
-button.primary.active,
-.button.primary.active {
-  background: var(--primaryShade4);
-}
-button.secondary,
-.button.secondary {
-  background: var(--secondaryColor);
-  color: var(--backgroundColor);
-}
-button.secondary.active,
-.button.secondary.active {
-  background: var(--secondaryShade4);
-}
-button.danger,
-.button.danger {
-  background: var(--dangerColor);
-  color: var(--backgroundColor);
-}
-button.danger.active,
-.button.danger.active {
-  background: var(--dangerShade4);
-}
-button.success,
-.button.success {
-  background: var(--successColor);
-  color: var(--backgroundColor);
-}
-button.success.active,
-.button.success.active {
-  background: var(--successShade4);
-}
-button.warning,
-.button.warning {
-  background: var(--warningColor);
-  color: var(--backgroundColor);
-}
-button.warning.active,
-.button.warning.active {
-  background: var(--warningShade4);
-}
-
 button.medium,
 a.medium {
   padding: 15px 18px;
   width: auto;
 }
-
 button.small,
 a.small {
   padding: 10px 12px;
@@ -276,7 +245,6 @@ a.small {
   font-size: 14px;
   font-weight: 500;
 }
-
 a,
 .link {
   display: inline;
@@ -287,31 +255,25 @@ a,
   line-height: 2.5;
   cursor: pointer;
   color: var(--accentShade4);
-}
-a:hover,
-.link:hover {
-  border-bottom: 2px solid;
-  filter: brightness(80%);
-}
-a.primary,
-.link.primary {
-  color: var(--primaryColor);
-}
-a.secondary,
-.link.secondary {
-  color: var(--secondaryColor);
-}
-a.danger,
-.link.danger {
-  color: var(--dangerColor);
-}
-a.success,
-.link.success {
-  color: var(--successColor);
-}
-a.warning,
-.link.warning {
-  color: var(--warningColor);
+  &:hover {
+    border-bottom: 2px solid;
+    filter: brightness(80%);
+  }
+  &.primary {
+    color: var(--primaryColor);
+  }
+  &.secondary {
+    color: var(--secondaryColor);
+  }
+  &.danger {
+    color: var(--dangerColor);
+  }
+  &.success {
+    color: var(--successColor);
+  }
+  &.warning {
+    color: var(--warningColor);
+  }
 }
 
 /* input */
@@ -320,7 +282,6 @@ label {
   display: block;
   margin-bottom: 5px;
 }
-
 input,
 select,
 textarea {
@@ -332,26 +293,21 @@ textarea {
   border-radius: var(--borderRadius);
   color: var(--foregroundColor);
   background: var(--backgroundColor);
-}
-input:focus,
-select:focus,
-textarea:focus {
-  outline: none;
-  border-color: var(--primaryColor);
-}
-input::disabled,
-select::disabled,
-textarea::disabled {
-  cursor: not-allowed;
-  background: var(--accentShade1);
-  opacity: 0.6;
+  &:focus {
+    outline: none;
+    border-color: var(--primaryColor);
+  }
+  &::disabled {
+    cursor: not-allowed;
+    background: var(--accentShade1);
+    opacity: 0.6;
+  }
 }
 
 textarea {
   resize: vertical;
   min-height: 117px;
 }
-
 select {
   height: 45px;
   padding: 8px 12px;
@@ -359,15 +315,13 @@ select {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E"), linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E"),
+    linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
   background-repeat: no-repeat, repeat;
   background-position: right 0.7em top 50%, 0 0;
   background-size: 0.65em auto, 100%;
 }
-
 select,
 option {
   font-weight: 500;
 }
-
-/*# sourceMappingURL=duestyle.css.map */

@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch-css": "sass --watch duestyle.sass:duestyle.css"
+    "watch-css": "sass --watch duestyle.scss:duestyle.css"
   },
   "keywords": [
     "css",
@@ -16,6 +16,6 @@
   "author": "hifiaz",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^4.9.4"
+    "node-sass": "^4.11.0"
   }
 }
