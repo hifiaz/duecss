@@ -339,9 +339,9 @@ textarea:focus {
   outline: none;
   border-color: var(--primaryColor);
 }
-input::disabled,
-select::disabled,
-textarea::disabled {
+input:disabled,
+select:disabled,
+textarea:disabled {
   cursor: not-allowed;
   background: var(--accentShade1);
   opacity: 0.6;

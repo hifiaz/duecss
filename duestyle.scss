@@ -297,7 +297,7 @@ textarea {
     outline: none;
     border-color: var(--primaryColor);
   }
-  &::disabled {
+  &:disabled {
     cursor: not-allowed;
     background: var(--accentShade1);
     opacity: 0.6;
